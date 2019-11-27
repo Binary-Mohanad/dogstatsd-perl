@@ -27,6 +27,9 @@
       "configure" : {
          "requires" : {
             "ExtUtils::MakeMaker" : "0"
+         },
+         "suggests" : {
+            "JSON::PP" : "2.27300"
          }
       },
       "develop" : {
@@ -58,9 +61,10 @@
          "web" : "https://github.com/binary-com/dogstatsd-perl"
       }
    },
-   "version" : "0.05",
+   "version" : "0.06",
    "x_contributors" : [
       "Amin Marashi <marashi.s.amin@gmail.com>",
+      "Binary-Mohanad <mohanad@binary.com>",
       "Chylli <chylli@binary.com>",
       "Fayland Lam <fayland@gmail.com>",
       "Jean-Yves Sireau <jy@binary.com>",
