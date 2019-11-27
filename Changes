@@ -1,6 +1,7 @@
 Revision history for DataDog-DogStatsd
 
 {{$NEXT}}
+        - Making it able to overwrite the DataDog host, port and namespace via environment variables
         - Add stats_event
 
 0.05  2018-07-02 15:54:34 +08
