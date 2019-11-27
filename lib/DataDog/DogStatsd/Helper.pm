@@ -2,7 +2,7 @@ package DataDog::DogStatsd::Helper;
 
 use strict;
 use warnings;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 
 use base qw( Exporter );
 our @EXPORT_OK = qw/stats_inc stats_dec stats_timing stats_gauge stats_count stats_histogram stats_event stats_timed/;
