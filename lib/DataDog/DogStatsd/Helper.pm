@@ -66,9 +66,9 @@ sub stats_event      { get_dogstatsd()->event(@_); }
 my $DOGSTATSD;
 sub get_dogstatsd {
     $DOGSTATSD ||= DataDog::DogStatsd->new(
-        host        => $ENV{DATADOG_HOST},
-        port        => $ENV{DATADOG_PORT},
-        namespace   => $ENV{DATADOG_NAMESPACE}
+        host        => $ENV{DATADOG_HOST} // '127.0.0.1',
+        port        => $ENV{DATADOG_PORT} // 8125,
+        namespace   => $ENV{DATADOG_NAMESPACE} // ''
         );
     return $DOGSTATSD;
 }
